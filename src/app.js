@@ -5,7 +5,7 @@ import MovieCard from "./MovieCard";
 import SearchIcon from "./search.svg";
 import "./App.css";
 
-const API_URL = "http://www.omdbapi.com?apikey=892398f";
+const API_URL = "http://www.omdbapi.com?apikey=${process.env.REACT_APP_API_KEY}";
 
 const App = () => {
   const [searchTerm, setSearchTerm] = useState("");
